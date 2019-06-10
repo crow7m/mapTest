@@ -33,12 +33,10 @@
 
                     var u = Math.random();
                     var v = Math.random();
-
                     var w = rd * Math.sqrt(u);
                     var t = 2 * Math.PI * v;
                     var x = w * Math.cos(t);
                     var y = w * Math.sin(t);
-
                     var xp = x/Math.cos(y0);
 
                     // Resulting point.
@@ -48,7 +46,7 @@
 
 // Usage Example.
 // Generates 100 points that is in a 1km radius from the given lat and lng point.
-                this.randomGeoPoints = generateRandomPoints({'lat':24.23, 'lng':23.12}, 10000000, 100000);
+                this.randomGeoPoints = generateRandomPoints({'lat':24.23, 'lng':23.12}, 100000, 100000);
                 this.$loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyANoGcUgMWhedKX7RKZ66wj6LYd2SEuljM")
                     .then(() => {
                         // Script is loaded, do something
